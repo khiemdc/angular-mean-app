@@ -4,11 +4,8 @@ const mongoose = require('mongoose');
 const post = require('../models/post');
 
 //connect to database
-//var db = mongoose.connect("mongodb://saiganesh:saiganesh6997@ds161121.mlab.com:61121/tester");
-
-//const db = "mongodb://khiemdc:oldhouse4312@ds151163.mlab.com:51163/contentmanagement";
-
-const db = 'localhost:27017/contentmanate';
+const db = "mongodb://khiemdc:oldhouse4312@ds151163.mlab.com:51163/contentmanagement";
+//const db = 'localhost:27017/contentmanate';
 
 mongoose.Promise = global.Promise;
 mongoose.connect(db, function(err) {
